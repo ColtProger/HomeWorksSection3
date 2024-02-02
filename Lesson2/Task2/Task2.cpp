@@ -7,8 +7,10 @@ class Counter {
 private:
     int count;
 public:
-    void InlValue1() { this->count = 1; };
-    void InValue(int value) { this->count = value; };
+    Counter() { count = 1; };
+    Counter(int value) { count = value; };
+   
+   
 
     void GetValue() { std::cout << count << std::endl; };
 
@@ -54,22 +56,14 @@ int main()
 
     Counter count;
 
-        if (reply == "нет") {
-            count.InlValue1();
-            count.GetValue();
-        };
         if (reply == "да") {
 
             std::cout << "Введите начальное значение счётчика: ";
             std::cin >> initial_value;
-            count.InValue(initial_value);
-            count.GetValue();
+            Counter count2(initial_value);
+            count = count2;
         };
    
-
-     //std::cout << "Введите команду ('+', '-', '=' или 'x'): ";
-     // std::cin >> action;
-
      do {
          std::cout << "Введите команду ('+', '-', '=' или 'x'): ";
          std::cin >> action;
