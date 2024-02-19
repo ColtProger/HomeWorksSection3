@@ -127,15 +127,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="clfigure.cpp" />
-    <ClCompile Include="clquadrangle.cpp" />
-    <ClCompile Include="cltriangle.cpp" />
+    <ClCompile Include="EquilateralTriangle.cpp" />
+    <ClCompile Include="Figure.cpp" />
+    <ClCompile Include="Parallelogram.cpp" />
+    <ClCompile Include="Quadrangle.cpp" />
+    <ClCompile Include="RightTriangle.cpp" />
+    <ClCompile Include="IsoscalestTriangle.cpp" />
+    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="Rhombus.cpp" />
+    <ClCompile Include="Square.cpp" />
     <ClCompile Include="Task3.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="clfigure.h" />
-    <ClInclude Include="clquadrangle.h" />
-    <ClInclude Include="cltriangle.h" />
+    <ClInclude Include="EquilateralTriangle.h" />
+    <ClInclude Include="Figure.h" />
+    <ClInclude Include="IsoscalestTriangle.h" />
+    <ClInclude Include="Parallelogram.h" />
+    <ClInclude Include="Quadrangle.h" />
+    <ClInclude Include="RightTriangle.h" />
+    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="Rhombus.h" />
+    <ClInclude Include="Square.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

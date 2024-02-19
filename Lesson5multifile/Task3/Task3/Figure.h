@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
-class ClassFigure {
+class Figure {
 protected:
 
     std::string fig_name;

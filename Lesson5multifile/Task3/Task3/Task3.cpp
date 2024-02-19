@@ -1,14 +1,19 @@
 ﻿#include <iostream>
 #include <string>
-#include "clfigure.h"
-#include "clquadrangle.h"
-#include "cltriangle.h"
+#include "Figure.h"
+#include "Quadrangle.h"
+#include "Rectangle.h"
+#include "Parallelogram.h"
+#include "Rhombus.h"
+#include "Square.h"
+#include "Triangle.h"
+#include "RightTriangle.h"
+#include "IsoscalestTriangle.h"
+#include "EquilateralTriangle.h"
 
-
-void print_info(ClassFigure* figure) {
+void print_info(Figure* figure) {
     figure->PrintInfo();
     std::cout << "\n";
-
 }
 
 
@@ -17,31 +22,31 @@ int main() {
     setlocale(LC_ALL, "Russian"); // задаём русский текст
     system("chcp 1251"); // настраиваем кодировку консоли
 
-    ClassTriangle Triangle(3, 7, 5, 70, 40, 50);
+    Triangle Triangle(3, 7, 5, 70, 40, 50);
     print_info(&Triangle);
 
-    ClassRightTriangle RightTriangle(3, 4, 5, 40, 50);
+    RightTriangle RightTriangle(3, 4, 5, 40, 50);
     print_info(&RightTriangle);
 
-    ClassIsoscalestTriangle IsoTriangle(3, 15, 40, 100);
+    IsoscalestTriangle IsoTriangle(3, 15, 40, 100);
     print_info(&IsoTriangle);
 
-    ClassEquilateralTriangle EquiTriangle(7);
+   EquilateralTriangle EquiTriangle(7);
     print_info(&EquiTriangle);
 
-    ClassQuadrangle Quadrangle(2, 3, 4, 5, 40, 50, 60, 70);
+    Quadrangle Quadrangle(2, 3, 4, 5, 40, 50, 60, 70);
     print_info(&Quadrangle);
 
-    ClassParallelogram Parallelogram(2, 5, 80, 100);
+    Parallelogram Parallelogram(2, 5, 80, 100);
     print_info(&Parallelogram);
 
-    ClassRectangle Rectangle(2, 5, 90);
+    Rectangle Rectangle(2, 5, 90);
     print_info(&Rectangle);
 
-    ClassRhombus Rhombus(4, 60, 120);
+    Rhombus Rhombus(4, 60, 120);
     print_info(&Rhombus);
 
-    ClassSquare Square(4);
+    Square Square(4);
     print_info(&Square);
 
 

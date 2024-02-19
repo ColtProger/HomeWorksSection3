@@ -1,6 +1,6 @@
-#include "clfigure.h"
+#include "Figure.h"
 //#include <iostream>
 
- void ClassFigure::PrintInfo() {
+ void Figure::PrintInfo() {
         std::cout << fig_name << ": " << std::endl;
     }
