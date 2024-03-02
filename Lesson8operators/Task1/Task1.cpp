@@ -14,11 +14,11 @@ public:
 	
 	bool operator==(Fraction other) { 
 
-		return ((numerator_ == other.numerator_)&&(denominator_ == other.denominator_));
+		return (numerator_ * other.denominator_ == other.numerator_ * denominator_);
 	}
 	bool operator!=(Fraction other) { return !(*this == other); }
 	bool operator>(Fraction other) { 
-		return (numerator_*other.numerator_ > other.numerator_*denominator_);
+		return (numerator_*other.denominator_ > other.numerator_*denominator_);
 	}
 	bool operator<(Fraction other) { return other > *this; }
 	bool operator>=(Fraction other) { return !(*this < other); }
