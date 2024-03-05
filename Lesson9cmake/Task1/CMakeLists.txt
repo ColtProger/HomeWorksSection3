@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22.0)
+set (CMAKE CXX_STANDARD 20)
+set (CMAKE CXX_STANDARD_REQUIRED True)
+project(Task1)
+add_executable(Task1 main.cpp)

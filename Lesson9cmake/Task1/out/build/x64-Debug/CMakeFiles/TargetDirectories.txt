@@ -1,0 +1,3 @@
+C:/Users/alexa/Documents/Netology/Cpp_study/cpp_projects/HomeWorksSec3/Lesson9cmake/Task1/out/build/x64-Debug/CMakeFiles/Task1.dir
+C:/Users/alexa/Documents/Netology/Cpp_study/cpp_projects/HomeWorksSec3/Lesson9cmake/Task1/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/alexa/Documents/Netology/Cpp_study/cpp_projects/HomeWorksSec3/Lesson9cmake/Task1/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

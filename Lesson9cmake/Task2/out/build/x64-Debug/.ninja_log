@@ -1,0 +1,24 @@
+# ninja log v5
+4	1485	7313698264609512	CMakeFiles/my_lib.dir/Figure.cpp.obj	36524b173062b5fd
+81	1512	7313698264647893	CMakeFiles/my_lib.dir/RightTriangle.cpp.obj	2a4a84f2f567a394
+71	1521	7313698264727888	CMakeFiles/my_lib.dir/Rhombus.cpp.obj	87f415d2f0b851ba
+64	1529	7313698264780461	CMakeFiles/my_lib.dir/Rectangle.cpp.obj	14f387523ec69e73
+13	1544	7313698264647893	CMakeFiles/my_lib.dir/Triangle.cpp.obj	e25cc11069c29ae6
+89	1552	7313698264601601	CMakeFiles/my_lib.dir/Square.cpp.obj	be7c75409f6388fc
+41	1559	7313698264790200	CMakeFiles/my_lib.dir/Parallelogram.cpp.obj	41d44771acfc0270
+20	1571	7313698264589568	CMakeFiles/my_lib.dir/EquilateralTriangle.cpp.obj	6f72c81a6fa70e0f
+57	1589	7313698265018260	CMakeFiles/my_lib.dir/Quadrangle.cpp.obj	84fc3379aaea191c
+28	1600	7313698265384669	CMakeFiles/my_lib.dir/IsoscalestTriangle.cpp.obj	9725b50b7be4b90
+1600	2216	7313698270174168	my_lib.lib	d2a4bdd291e3b617
+1512	2738	7313698276695139	CMakeFiles/Task2.dir/Figure.cpp.obj	fa01d6bb690a5af5
+1521	2833	7313698278018389	CMakeFiles/Task2.dir/Triangle.cpp.obj	4704c53219a20ba2
+1529	2865	7313698278399490	CMakeFiles/Task2.dir/EquilateralTriangle.cpp.obj	76b73a24f56ca8a2
+1589	2916	7313698278851235	CMakeFiles/Task2.dir/Rhombus.cpp.obj	938f776731a6a5ad
+1500	2938	7313698279170247	CMakeFiles/Task2.dir/Task2.cpp.obj	c2f8421a85b1b2c3
+1545	2951	7313698279250026	CMakeFiles/Task2.dir/IsoscalestTriangle.cpp.obj	af0722b1afe24460
+1572	2967	7313698279457750	CMakeFiles/Task2.dir/Rectangle.cpp.obj	1baef37a4f2a00f
+1553	3074	7313698280546063	CMakeFiles/Task2.dir/Parallelogram.cpp.obj	aaefc8a3bd3ee7d1
+1560	3114	7313698280956368	CMakeFiles/Task2.dir/Quadrangle.cpp.obj	dea58ab29dc09193
+2217	3432	7313698284148465	CMakeFiles/Task2.dir/RightTriangle.cpp.obj	1924e4951b92f35f
+2738	3535	7313698285168383	CMakeFiles/Task2.dir/Square.cpp.obj	ad833828de7bf4b2
+3535	3959	7313698289079514	Task2.exe	64ac929020d42649
