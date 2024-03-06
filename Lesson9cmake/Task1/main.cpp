@@ -3,11 +3,11 @@
 
 int main(int argc, char** argv)
 {
-	setlocale(LC_ALL, "Russian"); // задаём русский текст
-    system("chcp 1251"); // настраиваем кодировку консоли
+	setlocale(LC_ALL, "Russian"); 
+    system("chcp 1251"); 
 	std::string name;
-	std::cout << "Введите свое имя: asdf ";
+	std::cout << "������� ���� ���: ";
 std::cin >> name;
-std::cout << "Здравствуйте, " << name<<std::endl; 	
+std::cout << "������������, " << name<<std::endl; 	
 
 }
