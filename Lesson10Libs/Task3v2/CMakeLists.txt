@@ -1,0 +1,5 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
+project(leaver_client VERSION 1.0)
+add_library(dll_lib SHARED LeaverLibrary.h LeaverLibrary.cpp)
+add_executable(leaver_client main.cpp)
+target_link_libraries(leaver_client dll_lib )
