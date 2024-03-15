@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-#include "LeaverLibrary.h"
+#include "LeaverLibraryDLL.h"
 
 int main()
 {

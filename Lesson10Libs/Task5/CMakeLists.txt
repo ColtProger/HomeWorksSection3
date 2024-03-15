@@ -10,4 +10,6 @@ set(SOURCE_DLL FigureLibrary.cpp Triangle.cpp EquilateralTriangle.cpp Isoscalest
 
 add_library(FigureLibrary SHARED ${SOURCE_DLL})
 
+target_compile_definitions(FigureLibrary PRIVATE FIGURELIBRARYDIN_EXPORTS)
+
 target_link_libraries(FigureClient FigureLibrary)

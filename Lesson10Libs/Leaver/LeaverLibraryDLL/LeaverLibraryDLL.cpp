@@ -1,5 +1,4 @@
-#include "pch.h"
-#include "LeaverLibrary.h"
+#include "LeaverLibraryDLL.h"
 
 void LeaverLibrary::leave(std::string name) {
 	std::cout << "До свидания, " << name << "!" << std::endl;
