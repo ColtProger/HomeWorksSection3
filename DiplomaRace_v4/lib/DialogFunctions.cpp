@@ -24,6 +24,7 @@ int RegistrationPreface(int number_of_call) {
 
     if (action == 1) { return true; }
     else if (action == 2) { return false; }
+    return false;
 };
 
 std::string enum_to_name(int num) {
@@ -92,7 +93,7 @@ bool one_more_racing() {
 
     if (reply == 1) { return true; }
     else if (reply == 2) { return false; }
-
+    return false;
 
 };
 
@@ -109,3 +110,5 @@ int racing_type() {
 
     return rtype;
 }
+
+

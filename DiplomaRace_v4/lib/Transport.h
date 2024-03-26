@@ -1,7 +1,5 @@
 #pragma once
 #include<iostream>
-#include "MyException.h"
-
 
 class Transport {
 protected:

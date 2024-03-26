@@ -7,9 +7,6 @@
 #include <stdexcept>
 #include <typeinfo>
 
-
-
-#include "MyException.h"
 #include "Transport.h"
 #include "GroundTransport.h"
 #include "AirTransport.h"
@@ -83,32 +80,23 @@ int main()
                 int last_TS;
                 bool extn = false;
                 TS_number = Registration();
-                try {
-                    if (race_type == 1) {
-                        RaceGround* R1 = new RaceGround(distance, TS_number);
-                        race_time = R1->get_Race_time();
-                        delete R1;
-                    }
-                    else if (race_type == 2) {
-                        RaceAir* R1 = new RaceAir(distance, TS_number);
-                        race_time = R1->get_Race_time();
-                        delete R1;
-                    }
-                    else if (race_type == 3) {
-                        Race* R1 = new Race(distance, race_type, TS_number);
-                        race_time = R1->get_Race_time();
-                        delete R1;
-                    }
-                }
+                if (race_type == 1) {
+                   RaceGround R1(distance, TS_number);
+                   extn = R1.TS_check();
+                   race_time = R1.get_Race_time();              
+                 }
+                else if (race_type == 2) {
+                    RaceAir R1(distance, TS_number);
+                    extn = R1.TS_check();
+                    race_time = R1.get_Race_time();
+                 }
+                 else if (race_type == 3) {
+                    Race R1(distance, race_type, TS_number);
+                    extn = R1.TS_check();
+                    race_time = R1.get_Race_time();
+                 }
 
-                catch (MyException& ex)
-                {
-                    extn = true;
-                    std::cout << ex.what() << std::endl;
-                }
-
-
-                if ((TS_number != 0) && (TS_number != 8) && (TS_number != 9) && (extn != true)) {
+                if ((TS_number != 0) && (TS_number != 8) && (TS_number != 9) && (extn == true)) {
                     StrTransport x = { TS_number, race_time };
                     participants.push_back(x);
                     last_TS = x.TS_number;
@@ -129,12 +117,12 @@ int main()
                     
                     
 
-                    std::cout << "Зарегистрированные транспортные средства: ";
-                    for (int i = 0; i < static_cast<int>(participants.size()); ++i) {
-                        std::string TS_name = enum_to_name(participants[i].TS_number);
-                        std::cout << TS_name << "  ";
-                    };
-                    std::cout << "\n";
+               std::cout << "Зарегистрированные транспортные средства: ";
+               for (int i = 0; i < static_cast<int>(participants.size()); ++i) {
+                    std::string TS_name = enum_to_name(participants[i].TS_number);
+                    std::cout << TS_name << ",  ";
+                };
+                std::cout << "\n";
                             
             }
 

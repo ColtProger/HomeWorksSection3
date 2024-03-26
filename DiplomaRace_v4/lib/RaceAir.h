@@ -7,4 +7,6 @@ protected:
     int transport_type = 1;
 public:
     RaceAir(float distance, int transport_type);
+
+    bool TS_check() override;
 };

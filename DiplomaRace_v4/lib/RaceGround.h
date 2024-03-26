@@ -5,6 +5,9 @@ class RaceGround : public Race {
 protected:
     float distance = 0;
     int transport_type = 1;
+
 public:
     RaceGround(float distance, int transport_type);
+
+    bool TS_check() override;
 };
